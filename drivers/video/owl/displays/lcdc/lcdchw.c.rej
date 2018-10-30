@@ -1,0 +1,11 @@
+--- kernel/drivers/video/owl/displays/lcdc/lcdchw.c
++++ kernel/drivers/video/owl/displays/lcdc/lcdchw.c
+@@ -532,7 +351,7 @@
+     if (r)
+         goto err_mgr_enable;
+     
+-    if (lcdc->lcdc_enabled) {
++    if (!lcdc->lcdc_enabled) {
+         lcdchw_power_enable(lcdcdev, true);
+ 
+         lcdchw_display_init_lcdc(dssdev);

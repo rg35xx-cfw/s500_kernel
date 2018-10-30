@@ -1,0 +1,35 @@
+config BCMDHD
+	tristate "Broadcom FullMAC wireless cards support"
+	---help---
+	  This module adds support for wireless adapters based on
+	  Broadcom FullMAC chipset.
+
+config BCMDHD_FW_PATH
+	depends on BCMDHD
+	string "Firmware path"
+	default "/lib/firmware/ap6212/fw_bcm43438a0.bin"
+	---help---
+	  Path to the firmware file.
+
+config BCMDHD_NVRAM_PATH
+	depends on BCMDHD
+	string "NVRAM path"
+	default "/lib/firmware/ap6212/nvram_ap6212.txt"
+	---help---
+	  Path to the calibration file.
+
+config BCMDHD_CONFIG_PATH
+	depends on BCMDHD
+	string "Config path"
+	default "/lib/firmware/ap6212/config.txt"
+	---help---
+	  Path to the driver configuration file.
+
+config BCMDHD_WEXT
+	bool "Enable WEXT support"
+	depends on BCMDHD && CFG80211 = n
+	select WIRELESS_EXT
+	select WEXT_PRIV
+	help
+	  Enables WEXT support
+

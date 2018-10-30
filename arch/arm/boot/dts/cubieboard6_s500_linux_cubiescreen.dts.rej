@@ -1,0 +1,11 @@
+--- kernel/arch/arm/boot/dts/cubieboard6_s500_linux_cubiescreen.dts
++++ kernel/arch/arm/boot/dts/cubieboard6_s500_linux_cubiescreen.dts
+@@ -1019,7 +1019,7 @@
+ 		pinctrl-names = "default";
+ 		pinctrl-0 = <&rgb_state_default>;
+ 		lcd_power_gpios = <&gpio 130 0>;
+-		//lcd_reset_gpios = <&gpio 131 0>;
++		lcd_reset_gpios = <&gpio 131 0>;
+ 		lcd_spi_csx = <&gpio 73 0>;
+ 		lcd_spi_sck = <&gpio 72 0>;
+ 		lcd_spi_sdi = <&gpio 71 0>;

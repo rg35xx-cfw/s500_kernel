@@ -1,0 +1,11 @@
+--- kernel/arch/arm/configs/cubieboard6_s500_linux_defconfig
++++ kernel/arch/arm/configs/cubieboard6_s500_linux_defconfig
+@@ -1514,7 +1513,7 @@
+ CONFIG_TOUCHSCREEN_GSL3680=m
+ CONFIG_TOUCHSCREEN_FT5X06=m
+ CONFIG_TOUCHSCREEN_DETECT=m
+-CONFIG_TOUCHSCREEN_FT5X_TS=y
++# CONFIG_TOUCHSCREEN_FT5X_TS is not set
+ CONFIG_INPUT_MISC=y
+ # CONFIG_INPUT_AD714X is not set
+ # CONFIG_INPUT_BMA150 is not set
