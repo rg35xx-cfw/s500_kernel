@@ -3,7 +3,7 @@
 /include/ "actduino.dtsi"
 
 / {
-	model = "Actions GS705A board";
+	model = "RG35XX ATM7039 based handheld gaming console";
 	compatible = "actions,gs705a", "actions,atm7059a";
 
 	/*default*/
